@@ -155,6 +155,7 @@ function Login() {
         <TextField
           id="outlined-name"
           label="Password"
+          type="password"
           style={{ width: "100%", margin: "10px" }}
           onChange={(event) => {
             setPassword(event.target.value);
@@ -237,6 +238,7 @@ function Signup() {
         <TextField
           id="outlined-name"
           label="Password"
+          type="password"
           style={{ width: "100%", margin: "10px" }}
           onChange={(event) => {
             setPassword(event.target.value);
