@@ -1,0 +1,112 @@
+[
+  {
+    "productName": "Firefox maestro",
+    "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2021/4/JN/CM/LR/89951944/1-21-500x500.png",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Road bikes"
+  },
+  {
+    "productName": "Scott Speedster 40",
+    "imgUrl": "https://images.bike24.net/i/mb/fc/93/4b/286437-speedster-40-1069558.jpg",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Road bikes"
+  },
+  {
+    "productName": "Triban 520",
+    "imgUrl": "https://contents.mediadecathlon.com/p1675862/k$66518aef53df5cc6a00842f59c03296d/triban-rc-520-cycle-touring-road-bike-cn.jpg?&f=x",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Road bikes"
+  },
+  {
+    "productName": "Btwin rockrider 50",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8foH-lVX92wtROCfv6-IM-tqzu0BLvxOw0w&usqp=CAU",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Mountain bikes"
+  },
+  {
+    "productName": "Trek X-Caliber 8",
+    "imgUrl": "https://trek.scene7.com/is/image/TrekBicycleProducts/XCaliber8_22_35069_A_Primary?$responsive-pjpg$&cache=on,on&wid=800&hei=600",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Mountain bikes"
+  },
+  {
+    "productName": "Royal Enfield meteor 350",
+    "imgUrl": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/classic-350/colors/studio-shots/single-channel/redditch-grey/01-redditch-grey.png",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Cruisers"
+  },
+  {
+    "productName": "Jawa Perak",
+    "imgUrl": "https://images.jawamotorcycles.com/medium/perak/perak.png?v=1",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Cruisers"
+  },
+  {
+    "productName": "Harley Davidson Iron 883",
+    "imgUrl": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2022/2022-iron-883/2022-iron-883-f57/360/2022-iron-883-f57-motorcycle-10.jpg?impolicy=myresize&rw=1600",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Cruisers"
+  },
+  {
+    "productName": "Royal Enfield scram",
+    "imgUrl": "https://ridermagazine.com/wp-content/uploads/2022/03/Scram_Graphite-Red_04.jpg",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Adventure bikes"
+  },
+  {
+    "productName": "BMW G 310 GS",
+    "imgUrl": "https://www.rushlane.com/wp-content/uploads/2021/01/2021-bmw-g310-gs-price-hike-1200x900.jpg",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Adventure bikes"
+  },
+  {
+    "productName": "KTM 390 Adventure",
+    "imgUrl": "https://www.ktm.com/ktmgroup-storage/PHO_BIKE_90_LI_390-adv-22-or-us-90li_%23SALL_%23AEPI_%23V1.png",
+    "price": "1000",
+    "currency": "₹",
+    "quantity": 5,
+    "status": true,
+    "available": true,
+    "category": "Adventure bikes"
+  }
+]
