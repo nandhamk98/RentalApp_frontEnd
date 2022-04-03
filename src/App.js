@@ -18,6 +18,7 @@ import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
 import SendIcon from "@mui/icons-material/Send";
 import AddIcon from "@mui/icons-material/Add";
+import { api } from "./api";
 
 function App() {
   const history = useHistory();
@@ -113,23 +114,22 @@ function Homepage() {
   );
 }
 
-function Signup() {
+function Login() {
   const history = useHistory();
 
   const [name, setName] = useState();
-  const { username, setUserName, password, setPassword } =
-    useContext(CartContext);
+  const { setUserName, password, setPassword } = useContext(CartContext);
 
   const loginUser = (data) => {
-    fetch("http://localhost:4000/login", {
+    fetch(`${api}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.strsingify(data),
     })
-      .then((data) => data.json())
-      .then((data) => {
+      .then((res) => res.json())
+      .then((res) => {
         history.push("/");
       });
   };
@@ -166,7 +166,7 @@ function Signup() {
         startIcon={<AddIcon />}
         onClick={() => {
           const obj = {
-            username: username,
+            username: name,
             password: password,
           };
 
@@ -175,22 +175,21 @@ function Signup() {
           loginUser(obj);
         }}
       >
-        Sign up
+        Login
       </Button>
     </div>
   );
 }
 
-function Login() {
+function Signup() {
   const history = useHistory();
 
-  const { username, setUserName, password, setPassword } =
-    useContext(CartContext);
+  const { setUserName, password, setPassword } = useContext(CartContext);
 
-  const [name, setName] = useState();
+  const [name, setName] = useState("");
 
   const loginUser = (data) => {
-    fetch("http://localhost:4000/login", {
+    fetch(`${api}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -204,7 +203,7 @@ function Login() {
   };
 
   const createUser = (data) => {
-    fetch("http://localhost:4000/signup", {
+    fetch(`${api}/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -212,7 +211,7 @@ function Login() {
       body: JSON.stringify(data),
     })
       .then((data) => data.json())
-      .then((data) => {
+      .then((res) => {
         loginUser(data);
       });
   };
@@ -249,7 +248,7 @@ function Login() {
         startIcon={<AddIcon />}
         onClick={() => {
           const obj = {
-            username: username,
+            username: name,
             password: password,
           };
 
@@ -258,7 +257,7 @@ function Login() {
           createUser(obj);
         }}
       >
-        Login
+        SignUp
       </Button>
     </div>
   );

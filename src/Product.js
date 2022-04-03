@@ -16,11 +16,12 @@ import { CartContext } from "./context/CartContext";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
+import { ListAdminProducts } from "./ListAdminProducts";
 
 function ProductPage() {
   const [searchValue, setSearchValue] = useState("");
   const [valuePass, setValuePass] = useState(searchValue);
-  const { cart } = useContext(CartContext);
+  const { cart, username } = useContext(CartContext);
   const history = useHistory();
   const [category, setCategory] = useState("Categories");
   return (
@@ -90,7 +91,11 @@ function ProductPage() {
           </Toolbar>
         </AppBar>
       </Box>
-      <ListProducts searchWord={valuePass} category={category} />
+      {username !== "admin" ? (
+        <ListProducts searchWord={valuePass} category={category} />
+      ) : (
+        <ListAdminProducts searchWord={valuePass} category={category} />
+      )}
     </div>
   );
 }

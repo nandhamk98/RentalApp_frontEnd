@@ -3,17 +3,18 @@ import Button from "@mui/material/Button";
 import { useState, useEffect, useContext } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { CartContext } from "./context/CartContext";
+import { api } from "./api";
 
 export function ListProducts({ searchWord, category }) {
   const [data, setData] = useState(null);
 
   const fetchData = () => {
     if (category === "All" || category === "Categories") {
-      fetch("http://localhost:4000/products")
+      fetch(`${api}/products`)
         .then((products) => products.json())
         .then((products) => setData(products));
     } else {
-      fetch("http://localhost:4000/products/category/" + category)
+      fetch(`${api}/products/category/` + category)
         .then((products) => products.json())
         .then((products) => setData(products));
     }

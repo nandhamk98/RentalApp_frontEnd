@@ -140,6 +140,11 @@
   justify-content: flex-start;
 }
 
+.buttonGroup {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+}
 /* .category-label {
   color: red;
 } */
